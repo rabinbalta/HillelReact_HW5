@@ -1,0 +1,22 @@
+ul {
+	margin: 10px;
+	padding: 10px;
+}
+li {
+	margin: 3px;
+	padding: 3px;	
+}
+form {
+	margin: 10px;
+	padding: 10px;
+}
+input {
+	margin: 5px;
+	padding: 5px;
+}
+label {
+	padding: 10px;
+}
+textarea {
+    margin: 5px;
+}
