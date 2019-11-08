@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css';
+import styles from './style.css';
 
 const Form = ({addNewsFromProps}) => {
     const[text, setText] = useState('');
@@ -18,12 +18,12 @@ const Form = ({addNewsFromProps}) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>
+        <form className={styles.Form} onSubmit={handleSubmit}>
+            <label className={styles.Label}>
                 Add news:
-                <textarea value={text} onChange={handleChange} />
+                <textarea className={styles.Text} value={text} onChange={handleChange} />
             </label>
-            <input type="submit" value="Go!" />
+            <input className={styles.Input} type="submit" value="Go!" />
         </form>
     );
 };

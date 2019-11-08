@@ -28,7 +28,14 @@ module.exports = {
 
 			{
 				test: /\.css$/,
-				use: [MiniCSSExtractPlugin.loader, 'css-loader']			
+				use: [MiniCSSExtractPlugin.loader,
+					{
+						loader: 'css-loader',
+						options: {
+							modules: true
+						}
+					}
+				]			
 			}
 		]		
 	},

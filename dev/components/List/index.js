@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css';
+import styles from './style.css';
 
 const List = ({data}) => {
     const [quanNews, changeQuanNews] = useState(2);
@@ -11,14 +11,15 @@ const List = ({data}) => {
     return (
         <>
             <button
+                className={styles.toggleNews}
                 onClick={ toggleShow }
             >
                 toggle 2 news
             </button>
-            <ul className='News'>
+            <ul className={styles.News}>
                 {
                     data.slice([0], [quanNews]).map(news => (
-                        <li key={news.id}>                                
+                        <li className={styles.Topic} key={news.id}>                                
                             {news.text}
                         </li>
                     ))

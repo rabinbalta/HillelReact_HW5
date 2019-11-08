@@ -1,14 +1,15 @@
-form {
+.Form{
 	margin: 10px;
 	padding: 10px;
 }
-input {
+.Input{
 	margin: 5px;
 	padding: 5px;
 }
-label {
+.Label{
 	padding: 10px;
+	color: red;
 }
-textarea {
+.Text{
     margin: 5px;
 }
